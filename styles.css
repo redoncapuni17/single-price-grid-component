@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background-color: var(--light-gray);
+  min-height: 97vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: white;
+  border-radius: 7px;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px 0 rgba(97, 94, 94, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.community {
+  padding: 10px 27px;
+}
+.title {
+  color: var(--cyan);
+}
+.nontitle {
+  color: var(--bright-yellow);
+}
+.paragraph1 {
+  color: var(--grayish-blue);
+}
+.flex-card {
+  display: flex;
+}
+.flex-left {
+  background-color: var(--cyan);
+  padding: 10px 30px;
+  width: 400px;
+  height: 400px;
+}
+h3 {
+  color: white;
+}
+.dollar {
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+}
+.date {
+  color: rgba(247, 243, 243, 0.589);
+}
+.p2 {
+  color: white;
+  font-size: 15px;
+}
+.button {
+  background-color: var(--bright-yellow);
+  color: white;
+  width: 225px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(97, 94, 94, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.button:hover {
+  transition: 0.2s;
+  background-color: hsl(71, 58%, 42%);
+}
+.flex-right {
+  background-color: hsla(179, 62%, 43%, 0.8);
+  padding: 10px 30px;
+  width: 400px;
+  height: 400px;
+}
+ul {
+  list-style-type: none;
+  display: table-row;
+}
+li {
+  color: rgba(247, 243, 243, 0.589);
+  font-size: 13px;
+  line-height: 16px;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    margin: 20px;
+    width: 300px;
+    height: 670px;
+  }
+  .paragraph1 {
+  }
+  .flex-card {
+    display: block;
+  }
+  .flex-left {
+    height: 210px;
+  }
+  .flex-right {
+    height: 210px;
+  }
+}
